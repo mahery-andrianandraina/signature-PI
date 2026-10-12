@@ -881,7 +881,7 @@ el('downloadBtn').addEventListener('click', async ()=>{
     const a = document.createElement('a');
     a.href = url;
     const baseName = (el('pdfName').textContent || 'PI').replace(/\.pdf$/i,'');
-    a.download = baseName + '_signe.pdf';
+    a.download = baseName + '_APPROVED.pdf';
     document.body.appendChild(a);
     a.click();
     a.remove();
